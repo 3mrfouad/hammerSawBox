@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/style.css">
+	<title>Hammer, Saw and Box</title>
+	<script src="./assets/script.js" defer></script>
+
+</head>
+
+<body>
+	<header>
+		<h2>Find the weight of all hammer, saw and toolbox</h2>
+	</header>
+
+	<main>
+		<article class="card">
+			<span class='card-body'>
+				<img alt="" class='icon-lg' src='./images/hammer-svgrepo-com.svg'>
+				<span class="plus">+</span>
+				<img alt="" class='icon-lg' src='./images/saw-svgrepo-com.svg'>
+			</span>
+			<hr class='card-hr'>
+			<span class="card-footer">
+				<input id='hammer-saw' class='given-weight' type='number' min=0 max=100>
+				KG
+			</span>
+		</article>
+
+		<article class="card">
+			<span class='card-body'>
+				<img alt="" class='icon-lg' src='./images/saw-svgrepo-com.svg'>
+				<span class="plus">+</span>
+				<img alt="" class='icon-lg' src='./images/toolbox-svgrepo-com.svg'>
+			</span>
+			<hr class='card-hr'>
+			<span class="card-footer">
+				<input id='saw-box' class='given-weight' type='number' min=0 max=100>
+				KG
+			</span>
+		</article>
+
+		<article class="card">
+			<span class='card-body'>
+				<img alt="" class='icon-lg' src='./images/hammer-svgrepo-com.svg'>
+				<span class="plus">+</span>
+				<img alt="" class='icon-lg' src='./images/toolbox-svgrepo-com.svg'>
+			</span>
+			<hr class='card-hr'>
+			<span class="card-footer">
+				<input id='hammer-box' class='given-weight' type='number' min=0 max=100>
+				KG
+			</span>
+		</article>
+
+		<article class="card">
+			<span class='card-body'>
+				<img alt="" class='icon-lg' src='./images/hammer-svgrepo-com.svg'>
+				<span class="plus">+</span>
+				<img alt="" class='icon-lg' src='./images/saw-svgrepo-com.svg'>
+				<span class="plus">+</span>
+				<img alt="" class='icon-lg' src='./images/toolbox-svgrepo-com.svg'>
+			</span>
+			<hr class='card-hr'>
+			<span class="card-footer">
+				<input id='hammer-saw-box' type='number' placeholder="??" min=0 max=100>
+				KG
+			</span>
+		</article>
+
+		<article class="items-card card">
+			<div>
+				<img alt="" class='icon' src='./images/hammer-svgrepo-com.svg'>
+				<input id='hammer' class='item-weight' type="number" min=0 placeholder="??">
+				<span class="kg">KG</span>
+			</div>
+			<div>
+				<img alt="" class='icon' src='./images/saw-svgrepo-com.svg'>
+				<input id='saw' class='item-weight' type="number" min=0 placeholder="??">
+				<span class="kg">KG</span>
+			</div>
+			<div>
+				<img alt="" class='icon' src='./images/toolbox-svgrepo-com.svg'>
+				<input id='toolbox' class='item-weight' type="number" min=0 placeholder="??">
+				<span class="kg">KG</span>
+			</div>
+			<button id="guess-btn" class="btn">Guess</button>
+			<button id="reload-btn">
+
+
+				<img alt="" src='images/reload-svgrepo-com.svg' width=16 height=16>
+				<span style>Reload</span>
+			</button>
+		</article>
+
+		<section class="help">
+			<h4>How to Play</h4>
+			<ul>
+				<li>Enter your guess in place of <em><strong>??</strong></em> next to each item.</li>
+				<li>Press guess to evaluate your guess</li>
+				<li>Reload to reload the numbers and guess more!</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer>
+		<span> Amr Fouad _</span>
+		<a href="https://github.com/3mrfouad" target="_blank"><img class='gh-icon' src="./images//github-svgrepo-com.svg"
+				alt=""></a>
+		<span>_[Mar 2022]</span>
+	</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+[
+	{
+		"hammer": 7,
+		"saw": 3,
+		"box": 17
+	},
+	{
+		"hammer": 10,
+		"saw": 5,
+		"box": 21
+	},
+	{
+		"hammer": 4,
+		"saw": 1,
+		"box": 10
+	},
+	{
+		"hammer": 20,
+		"saw": 9,
+		"box": 32
+	},
+	{
+		"hammer": 30,
+		"saw": 13,
+		"box": 53
+	},
+	{
+		"hammer": 12,
+		"saw": 7,
+		"box": 22
+	}
+]
