@@ -48,6 +48,7 @@ input {
   margin-right: 0.5rem;
   border-bottom: 1px solid var(--theme-color);
   text-align: center;
+  font-size: 1.2rem;
 }
 
 input:focus {
@@ -74,18 +75,22 @@ section.help {
 }
 
 section.help > h4,
-section.help > ul {
+section.help > ol {
   margin: 0;
   color: white;
 }
 
-section.help > ul {
+section.help > h4 {
+  padding-left: 0.5rem;
+}
+
+section.help > ol {
   margin-top: 0.6rem;
 }
 
-section.help > ul > li {
-  font-size: 0.75rem;
-  list-style-type: none;
+section.help > ol > li {
+  font-size: 0.9rem;
+  list-style-type: decimal;
   line-height: 1.65;
 }
 
@@ -113,13 +118,15 @@ footer > span {
   display: flex;
   justify-content: center;
   width: 50%;
-  margin-top: 0.75rem;
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
 }
 
 #reload-btn > img {
   fill: var(--theme-color);
   width: min-content;
-  margin-right: 0.25rem;
+  margin-right: 0.5rem;
+  transform: scale(1.4);
 }
 
 #reload-btn:active {
@@ -130,7 +137,7 @@ footer > span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 160px;
+  width: 260px;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: var(--theme-shadow);
@@ -161,7 +168,6 @@ footer > span {
   display: flex;
   justify-content: center;
   width: 100%;
-  font-size: 0.75rem;
   font-weight: bold;
 }
 
@@ -175,8 +181,8 @@ footer > span {
 
 .kg,
 .plus {
-  font-size: 0.75rem;
   font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .plus {
@@ -187,9 +193,9 @@ footer > span {
 .btn {
   background-color: var(--theme-color);
   color: white;
-  padding: 5px 24px;
+  padding: 12px 24px;
   border-radius: 5px;
-  font-size: 0.7rem;
+  font-size: 1.1rem;
   font-weight: bold;
   box-shadow: var(--theme-shadow);
 }
@@ -199,16 +205,16 @@ footer > span {
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .icon-lg {
-  width: 35px;
+  width: 50px;
 }
 
 .item-weight {
-  width: 750%;
+  width: 75%;
 }
 
 #hammer-saw-img {
@@ -228,6 +234,6 @@ footer > span {
 }
 
 #guess-btn {
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
   width: 50%;
 }
