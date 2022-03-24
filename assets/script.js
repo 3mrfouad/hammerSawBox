@@ -1,3 +1,35 @@
+const data = [
+  {
+    hammer: 7,
+    saw: 3,
+    box: 17
+  },
+  {
+    hammer: 10,
+    saw: 5,
+    box: 21
+  },
+  {
+    hammer: 4,
+    saw: 1,
+    box: 10
+  },
+  {
+    hammer: 20,
+    saw: 9,
+    box: 32
+  },
+  {
+    hammer: 30,
+    saw: 13,
+    box: 53
+  },
+  {
+    hammer: 12,
+    saw: 7,
+    box: 22
+  }
+]
 const givenWeights = document.querySelectorAll('.given-weight')
 const guessBtn = document.querySelector('#guess-btn')
 const reloadBtn = document.querySelector('#reload-btn')
@@ -57,18 +89,10 @@ reloadBtn.addEventListener('click', () => {
 })
 
 const initializeGame = () => {
-  fetch('../data/data.json')
-    .then(response => response.json())
-    .then(data => {
-      let randomIndex = random(0, data?.length)
-      hammerSaw.value = data[randomIndex].hammer + data[randomIndex].saw
-      sawBox.value = data[randomIndex].saw + data[randomIndex].box
-      hammerBox.value = data[randomIndex].hammer + data[randomIndex].box
-    })
-    .catch(error => {
-      alert('Error while loading game, try again later!')
-      console.error(error.message)
-    })
+  let randomIndex = random(0, data?.length)
+  hammerSaw.value = data[randomIndex].hammer + data[randomIndex].saw
+  sawBox.value = data[randomIndex].saw + data[randomIndex].box
+  hammerBox.value = data[randomIndex].hammer + data[randomIndex].box
 }
 
 window.addEventListener('load', initializeGame)
