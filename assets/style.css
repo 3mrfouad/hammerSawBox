@@ -95,7 +95,7 @@ section.help > ol > li {
 }
 
 footer {
-  margin-top: 1rem;
+  margin: 2rem 0;
   color: var(--theme-color);
   text-align: center;
 }
